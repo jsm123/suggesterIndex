@@ -1,0 +1,23 @@
+{
+  "name": "suggesterIndex",
+  "version": "0.0.0",
+  "description": "",
+  "main": "addTestData.js",
+  "dependencies": {
+    "suggester": "0.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jsm123/suggesterIndex.git"
+  },
+  "author": "Juri Smarschevski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jsm123/suggesterIndex/issues"
+  },
+  "homepage": "https://github.com/jsm123/suggesterIndex"
+}
