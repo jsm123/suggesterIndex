@@ -1,14 +1,14 @@
     var _config = require('./indexConfig.js');
-    var client = require('suggester')(_config).client;
+    var _client = require('suggester')(_config).client;
 
     console.log('deleting index if exists');
-    client.indices.delete({
+    _client.indices.delete({
         index: _config.index,
         ignore: [404]
     }).
     then(function () {
         console.log('creating index');
-        return client.indices.create({
+        return _client.indices.create({
             index: _config.index,
             type: _config.type,
             body: {
@@ -18,7 +18,7 @@
     }).
     then(function () {
         console.log('adding mapping');
-        return client.indices.putMapping({
+        return _client.indices.putMapping({
             index: _config.index,
             type: _config.type,
             body: _config.mapping
